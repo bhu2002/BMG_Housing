@@ -979,28 +979,33 @@
       position: relative;
       display: flex;
       align-items: center;
-      gap: 10px;
+      justify-content: center;
+      gap: 8px;
       background: var(--gold);
       color: var(--charcoal);
       text-decoration: none;
-      padding: 16px 24px;
-      border-radius: 50px;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.25);
-      transition: background 0.2s, transform 0.2s;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      transition: background 0.2s, transform 0.2s, width 0.3s, border-radius 0.3s;
+      overflow: hidden;
+      white-space: nowrap;
     }
 
     .floating-cta-btn:hover {
       background: var(--gold-light);
       transform: translateY(-2px);
+      width: 150px;
+      border-radius: 30px;
+      justify-content: flex-start;
+      padding-left: 18px;
     }
 
     .floating-cta-pulse {
       position: absolute;
       inset: 0;
-      border-radius: 50px;
+      border-radius: 50%;
       background: var(--gold);
       opacity: 0.5;
       animation: ctaPulse 2.2s ease-out infinite;
@@ -1012,7 +1017,18 @@
       100% { transform: scale(1.3); opacity: 0; }
     }
 
-    .floating-cta-icon { font-size: 16px; }
+    .floating-cta-icon { font-size: 22px; }
+
+    .floating-cta-text {
+      font-size: 13px;
+      font-weight: 700;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .floating-cta-btn:hover .floating-cta-text {
+      opacity: 1;
+    }
 
     /* ── UPCOMING PARTNERSHIPS ── */
     #upcoming {
@@ -1222,8 +1238,6 @@
       .journey-timeline { grid-template-columns: 1fr; }
       .testimonials-grid { grid-template-columns: 1fr; }
       .floating-cta { bottom: 16px; right: 16px; }
-      .floating-cta-btn { padding: 14px 18px; }
-      .floating-cta-text { display: none; }
     }
 
     /* ── NAV adjustment for additional links ── */
