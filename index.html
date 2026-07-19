@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMG Housing | Building Meaningful Generations — Premium Homes in Bangalore</title>
+  <meta name="description" content="BMG Housing — a RERA-registered channel partner helping you find premium villas, apartments, villaments, penthouses and plots in Bangalore. End-to-end guidance at zero extra cost." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-wrap">
+      <!-- Replace src below with your actual logo file (e.g. logo.png / logo.svg) -->
+      <img src="logo.png" alt="BMG Housing Logo" class="logo-img"
+           onerror="this.onerror=null;this.style.display='none';document.getElementById('logoFallback').style.display='flex';" />
+      <div class="logo-fallback" id="logoFallback">BMG</div>
+    </div>
+    <div class="nav-logo-text">
+      <span>BMG HOUSING</span>
+      <span>Building Meaningful Generations</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#journey">Your Journey</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact" class="nav-cta">Talk to Us</a></li>
+  </ul>
+  <div class="hamburger" onclick="openMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMenu()">✕</button>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#journey" onclick="closeMenu()">Your Journey</a>
+  <a href="#why" onclick="closeMenu()">Why Us</a>
+  <a href="#testimonials" onclick="closeMenu()">Testimonials</a>
+  <a href="#contact" onclick="closeMenu()">Talk to Us</a>
+</div>
+
+<!-- FLOATING STICKY CTA -->
+<div class="floating-cta" id="floatingCta">
+  <a href="#contact" class="floating-cta-btn" onclick="closeMenu()">
+    <span class="floating-cta-pulse"></span>
+    <span class="floating-cta-icon">💬</span>
+    <span class="floating-cta-text">Talk to Us</span>
+  </a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="arch-lines">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <rect x="800" y="100" width="500" height="350" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
+      <rect x="840" y="140" width="100" height="100" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+      <rect x="840" y="260" width="100" height="80" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+      <rect x="960" y="140" width="150" height="190" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+      <rect x="1130" y="140" width="140" height="100" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+      <rect x="1130" y="260" width="140" height="80" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+      <line x1="800" y1="350" x2="1300" y2="350" stroke="#C9A84C" stroke-width="0.5"/>
+      <line x1="960" y1="100" x2="960" y2="450" stroke="#C9A84C" stroke-width="0.5"/>
+      <line x1="1130" y1="100" x2="1130" y2="450" stroke="#C9A84C" stroke-width="0.5"/>
+      <circle cx="1380" cy="800" r="40" fill="none" stroke="#C9A84C" stroke-width="0.6"/>
+      <line x1="1380" y1="755" x2="1380" y2="845" stroke="#C9A84C" stroke-width="0.8"/>
+      <line x1="1335" y1="800" x2="1425" y2="800" stroke="#C9A84C" stroke-width="0.8"/>
+      <text x="1380" y="750" text-anchor="middle" fill="#C9A84C" font-size="10">N</text>
+      <line x1="820" y1="480" x2="1020" y2="480" stroke="#C9A84C" stroke-width="0.6"/>
+      <line x1="820" y1="475" x2="820" y2="485" stroke="#C9A84C" stroke-width="0.6"/>
+      <line x1="1020" y1="475" x2="1020" y2="485" stroke="#C9A84C" stroke-width="0.6"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span>RERA-Registered Channel Partner · Bangalore</span>
+    </div>
+    <h1 class="hero-title">
+      Find the Home<br/>
+      <em>You Deserve</em>
+    </h1>
+    <p class="hero-subtitle">
+      BMG Housing — Building Meaningful Generations — connects Bangalore's discerning buyers with premium villas, apartments, villaments, penthouses and gated-community plots. Handpicked, verified, and personally guided, at zero extra cost to you.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Talk to Us — Register Your Interest</a>
+      <a href="#projects" class="btn-outline">View Projects</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">2</div>
+      <div class="stat-label">Active Projects</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">RERA Verified</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">0</div>
+      <div class="stat-label">Cost to You</div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual">
+    <div class="about-card">
+      <div class="about-card-quote">
+        "Every family deserves a home that feels right — not just priced right."
+      </div>
+      <div class="about-card-sig">— BMG Housing</div>
+    </div>
+    <div class="about-badge">
+      <span>🏆</span>
+      <span>Trusted Partner</span>
+    </div>
+  </div>
+
+  <div class="about-text">
+    <div class="section-eyebrow"><span>Who We Are</span></div>
+    <h2 class="section-title">B.M.G. — Building Meaningful Generations</h2>
+    <p>
+      BMG Housing is a RERA-registered channel partner helping discerning buyers find premium properties across Bangalore — villas, premium apartments, villaments, penthouses, and plots within gated communities. Whether you're buying to live in, investing for the future, planning your retirement home, or acquiring a land parcel, we help you find the right fit.
+    </p>
+    <p>
+      We work with a select, curated portfolio of empanelled projects rather than a sprawling inventory, so every client gets our full attention, our market intelligence, and honest, end-to-end guidance — from your very first enquiry to the day you move in, and beyond.
+    </p>
+
+    <div class="about-pillars">
+      <div class="pillar">
+        <div class="pillar-icon">🏘️</div>
+        <div class="pillar-title">Every Kind of Premium Home</div>
+        <div class="pillar-desc">Villas, apartments, villaments, penthouses and gated-community plots.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">📜</div>
+        <div class="pillar-title">RERA-Registered</div>
+        <div class="pillar-desc">A verified, authorised channel partner you can trust and check.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🎯</div>
+        <div class="pillar-title">Buy, Invest, or Retire</div>
+        <div class="pillar-desc">We guide you whether it's a home, an investment, or land.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">📍</div>
+        <div class="pillar-title">Bangalore Focused</div>
+        <div class="pillar-desc">Deep local knowledge of every micro-market in the city.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-eyebrow"><span>Currently Empanelled</span></div>
+      <h2 class="section-title">Our Active Projects</h2>
+    </div>
+    <a href="#contact" class="btn-primary">Schedule a Site Visit</a>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Project 1: Surya Valencia -->
+    <div class="project-card" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      <div class="project-visual project-visual-surya">
+        <div class="project-illustration">
+          <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" width="340">
+            <rect x="60" y="140" width="280" height="120" fill="rgba(255,255,255,0.05)" rx="2"/>
+            <rect x="80" y="155" width="110" height="100" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.5)" stroke-width="1"/>
+            <polygon points="75,155 190,90 305,155" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.6)" stroke-width="1.5"/>
+            <rect x="120" y="210" width="30" height="45" fill="rgba(201,168,76,0.4)" rx="1"/>
+            <circle cx="145" cy="234" r="2" fill="#C9A84C"/>
+            <rect x="88" y="170" width="28" height="22" fill="rgba(143,175,143,0.3)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
+            <rect x="152" y="170" width="28" height="22" fill="rgba(143,175,143,0.3)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
+            <rect x="210" y="175" width="80" height="80" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
+            <polygon points="205,175 250,135 295,175" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.5)" stroke-width="1"/>
+            <rect x="228" y="205" width="22" height="50" fill="rgba(201,168,76,0.3)" rx="1"/>
+            <circle cx="50" cy="245" r="12" fill="rgba(143,175,143,0.4)"/>
+            <circle cx="355" cy="245" r="15" fill="rgba(143,175,143,0.4)"/>
+            <circle cx="340" cy="238" r="10" fill="rgba(143,175,143,0.35)"/>
+            <line x1="30" y1="260" x2="370" y2="260" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+            <circle cx="340" cy="60" r="18" fill="rgba(201,168,76,0.25)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
+            <line x1="340" y1="35" x2="340" y2="28" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+            <line x1="358" y1="43" x2="364" y2="38" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+            <line x1="365" y1="60" x2="372" y2="60" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="project-tag">Villa</div>
+        <div class="project-status">● Accepting Enquiries</div>
+      </div>
+      <div class="project-info">
+        <div class="project-type">Luxury Villa Project</div>
+        <h3 class="project-name">Surya Valencia</h3>
+        <p class="project-desc">
+          An exclusive gated villa community designed for those who seek space, privacy, and a premium lifestyle. Surya Valencia offers independent villas with private gardens and world-class amenities in a serene Bangalore neighbourhood.
+        </p>
+        <div class="project-features">
+          <span class="feature-chip">🏡 Independent Villas</span>
+          <span class="feature-chip">🌿 Private Gardens</span>
+          <span class="feature-chip">🔒 Gated Community</span>
+          <span class="feature-chip">🏊 Club House</span>
+          <span class="feature-chip">📐 Spacious Layouts</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-location">📍 Bangalore</div>
+          <a href="#contact" class="project-cta" onclick="setProject('Surya Valencia')">
+            Enquire Now →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Echoes of Eden -->
+    <div class="project-card" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      <div class="project-visual project-visual-echoes">
+        <div class="project-illustration">
+          <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" width="340">
+            <rect x="100" y="80" width="200" height="170" fill="rgba(180,160,220,0.12)" stroke="rgba(180,160,220,0.35)" stroke-width="1.2"/>
+            <line x1="100" y1="140" x2="300" y2="140" stroke="rgba(180,160,220,0.2)" stroke-width="1"/>
+            <line x1="100" y1="200" x2="300" y2="200" stroke="rgba(180,160,220,0.2)" stroke-width="1"/>
+            <rect x="115" y="95" width="35" height="28" fill="rgba(201,168,76,0.25)" stroke="rgba(201,168,76,0.5)" stroke-width="1" rx="1"/>
+            <rect x="165" y="95" width="35" height="28" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.4)" stroke-width="1" rx="1"/>
+            <rect x="215" y="95" width="35" height="28" fill="rgba(201,168,76,0.25)" stroke="rgba(201,168,76,0.5)" stroke-width="1" rx="1"/>
+            <rect x="265" y="95" width="25" height="28" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.4)" stroke-width="1" rx="1"/>
+            <rect x="115" y="155" width="35" height="28" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.4)" stroke-width="1" rx="1"/>
+            <rect x="165" y="155" width="35" height="28" fill="rgba(201,168,76,0.3)" stroke="rgba(201,168,76,0.5)" stroke-width="1" rx="1"/>
+            <rect x="215" y="155" width="35" height="28" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.4)" stroke-width="1" rx="1"/>
+            <rect x="265" y="155" width="25" height="28" fill="rgba(201,168,76,0.25)" stroke="rgba(201,168,76,0.5)" stroke-width="1" rx="1"/>
+            <rect x="170" y="210" width="60" height="40" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.5)" stroke-width="1" rx="1"/>
+            <rect x="185" y="220" width="12" height="30" fill="rgba(201,168,76,0.4)" rx="1"/>
+            <rect x="203" y="220" width="12" height="30" fill="rgba(201,168,76,0.4)" rx="1"/>
+            <rect x="100" y="70" width="200" height="14" fill="rgba(143,175,143,0.2)" stroke="rgba(143,175,143,0.3)" stroke-width="1"/>
+            <circle cx="130" cy="70" r="8" fill="rgba(143,175,143,0.4)"/>
+            <circle cx="200" cy="68" r="10" fill="rgba(143,175,143,0.35)"/>
+            <circle cx="270" cy="70" r="8" fill="rgba(143,175,143,0.4)"/>
+            <rect x="50" y="150" width="52" height="100" fill="rgba(180,160,220,0.08)" stroke="rgba(180,160,220,0.25)" stroke-width="1"/>
+            <rect x="298" y="150" width="52" height="100" fill="rgba(180,160,220,0.08)" stroke="rgba(180,160,220,0.25)" stroke-width="1"/>
+            <circle cx="60" cy="50" r="1.5" fill="rgba(255,255,255,0.4)"/>
+            <circle cx="140" cy="30" r="1" fill="rgba(255,255,255,0.3)"/>
+            <circle cx="320" cy="40" r="1.5" fill="rgba(255,255,255,0.4)"/>
+            <circle cx="360" cy="70" r="1" fill="rgba(255,255,255,0.3)"/>
+          </svg>
+        </div>
+        <div class="project-tag">Villament</div>
+        <div class="project-status">● Accepting Enquiries</div>
+      </div>
+      <div class="project-info">
+        <div class="project-type">Villament Project · Villa in Apartment Form</div>
+        <h3 class="project-name">Echoes of Eden</h3>
+        <p class="project-desc">
+          A first-of-its-kind villament concept — combining the grandeur and privacy of a villa with the smart layout and amenity-rich environment of a premium apartment. Echoes of Eden redefines urban luxury living in Bangalore.
+        </p>
+        <div class="project-features">
+          <span class="feature-chip">🏙️ Villa-feel Apartments</span>
+          <span class="feature-chip">🌳 Green Surroundings</span>
+          <span class="feature-chip">🏋️ Modern Amenities</span>
+          <span class="feature-chip">🚗 Dedicated Parking</span>
+          <span class="feature-chip">🎨 Premium Interiors</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-location">📍 Bangalore</div>
+          <a href="#contact" class="project-cta" onclick="setProject('Echoes of Eden')">
+            Enquire Now →
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- UPCOMING PARTNERSHIPS -->
+<section id="upcoming">
+  <div class="section-eyebrow"><span>Coming Soon</span></div>
+  <h2 class="section-title">Upcoming Partnerships</h2>
+  <p class="upcoming-sub">
+    We're steadily growing our curated portfolio. Here's a preview of the projects we're currently in discussion to empanel with next.
+  </p>
+
+  <div class="upcoming-grid">
+    <div class="upcoming-card">
+      <div class="upcoming-logo">Project A</div>
+      <div class="upcoming-label">Upcoming Villa Project</div>
+    </div>
+    <div class="upcoming-card">
+      <div class="upcoming-logo">Project B</div>
+      <div class="upcoming-label">Upcoming Apartment Project</div>
+    </div>
+    <div class="upcoming-card">
+      <div class="upcoming-logo">Project C</div>
+      <div class="upcoming-label">Upcoming Plotted Development</div>
+    </div>
+    <div class="upcoming-card upcoming-more">
+      <div class="upcoming-logo">+ More</div>
+      <div class="upcoming-label">Talk to us for early access</div>
+    </div>
+  </div>
+</section>
+
+<!-- YOUR JOURNEY -->
+<section id="journey">
+  <div style="max-width: 600px;">
+    <div class="section-eyebrow"><span>How It Works</span></div>
+    <h2 class="section-title">Your Journey With BMG Housing</h2>
+    <p class="journey-sub">As your RERA-registered channel partner, we stay with you at every step — not just until you sign, but well beyond.</p>
+  </div>
+
+  <div class="journey-timeline">
+    <div class="journey-step">
+      <div class="journey-num">01</div>
+      <div class="journey-title">Register Your Interest</div>
+      <div class="journey-desc">Tell us what you're looking for — property type, purpose and location — and we get in touch within hours.</div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-num">02</div>
+      <div class="journey-title">Curated Recommendations</div>
+      <div class="journey-desc">Using our market intelligence, we match you to Surya Valencia, Echoes of Eden, or point you toward other suitable options.</div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-num">03</div>
+      <div class="journey-title">Guided Site Visits</div>
+      <div class="journey-desc">We personally accompany you on site visits — no pressure, just honest answers to every question.</div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-num">04</div>
+      <div class="journey-title">Negotiation & Best Price</div>
+      <div class="journey-desc">We negotiate on your behalf to help you get the fairest possible price and terms.</div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-num">05</div>
+      <div class="journey-title">Paperwork & RERA Compliance</div>
+      <div class="journey-desc">We guide you through documentation, approvals and compliance — end to end, at zero extra cost to you.</div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-num">06</div>
+      <div class="journey-title">Beyond the Keys</div>
+      <div class="journey-desc">From trusted interior designers to furniture partners, we help you settle in — our relationship doesn't end at possession.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY BMG -->
+<section id="why">
+  <div style="max-width: 600px;">
+    <div class="section-eyebrow"><span>Why BMG Housing</span></div>
+    <h2 class="section-title">Why Come to Us,<br/>Not Just the Builder?</h2>
+    <p class="why-sub">If you know exactly which project you want, you could go directly to the builder. Here's what you gain by coming through us instead — at zero extra cost.</p>
+  </div>
+
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="why-icon">🎯</div>
+      <div class="why-number">01</div>
+      <div class="why-title">Curated, Selective Portfolio</div>
+      <div class="why-desc">We don't spread ourselves thin across hundreds of listings. Every project we empanel with is vetted, so you only see options worth considering.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🧠</div>
+      <div class="why-number">02</div>
+      <div class="why-title">Deep Market Intelligence</div>
+      <div class="why-desc">Beyond our own projects, our knowledge of Bangalore's real estate market helps you evaluate any property with confidence.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🤝</div>
+      <div class="why-number">03</div>
+      <div class="why-title">Negotiation on Your Side</div>
+      <div class="why-desc">We negotiate directly with developers on your behalf to help you get the best fair price — not just the asking price.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🗺️</div>
+      <div class="why-number">04</div>
+      <div class="why-title">End-to-End Guidance</div>
+      <div class="why-desc">From your first site visit to interiors and furnishing after possession, we're with you for the entire journey — no limitations.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🔒</div>
+      <div class="why-number">05</div>
+      <div class="why-title">Zero Cost to You</div>
+      <div class="why-desc">Our guidance costs you nothing extra. You only ever pay for the property itself — nothing more.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">📜</div>
+      <div class="why-number">06</div>
+      <div class="why-title">RERA-Registered & Verifiable</div>
+      <div class="why-desc">We're an authorised, RERA-registered channel partner — you can verify our credentials before you even meet us.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-eyebrow"><span>Client Stories</span></div>
+  <h2 class="section-title">What Our Clients Say</h2>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"BMG Housing made what felt like an overwhelming process completely manageable. They were with us at every site visit and never once pushed us toward something we weren't sure about."</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">A</div>
+        <div>
+          <div class="testimonial-name">Anita R.</div>
+          <div class="testimonial-role">Homeowner, Surya Valencia</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"What stood out was the honesty. They actually pointed out things we should consider before committing, instead of just pushing for a quick sale."</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">K</div>
+        <div>
+          <div class="testimonial-name">Karthik S.</div>
+          <div class="testimonial-role">Investor</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"From the first enquiry call to helping us find an interior designer after possession, BMG Housing stayed involved well beyond the sale. That end-to-end support made all the difference."</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">P</div>
+        <div>
+          <div class="testimonial-name">Priya & Arjun M.</div>
+          <div class="testimonial-role">Homeowners, Echoes of Eden</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-info">
+    <div class="section-eyebrow"><span>Get in Touch</span></div>
+    <h2 class="section-title">Let's Find Your Home</h2>
+    <p>
+      Ready to explore Surya Valencia, Echoes of Eden, or simply want expert guidance on Bangalore real estate? Reach out and we'll respond within hours — at no cost to you.
+    </p>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-item-text">
+          <label>Call / WhatsApp</label>
+          <span>+91 00000 00000</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-item-text">
+          <label>Email Us</label>
+          <span>hello@bmghousing.com</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-item-text">
+          <label>Location</label>
+          <span>Bangalore, Karnataka</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📜</div>
+        <div class="contact-item-text">
+          <label>RERA Registration</label>
+          <span>RERA No: [Insert Your RERA Number] — verifiable at rera.karnataka.gov.in</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <div class="form-title">Register Your Interest</div>
+    <div class="form-group">
+      <label>Full Name <span class="req">*</span></label>
+      <input type="text" id="fullName" placeholder="Rahul Sharma" required />
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Phone Number <span class="req">*</span></label>
+        <input type="tel" id="phone" placeholder="98765 43210" required maxlength="10" />
+      </div>
+      <div class="form-group">
+        <label>Location</label>
+        <select id="location">
+          <option value="">Select (optional)</option>
+          <option value="India">India</option>
+          <option value="Outside India">Outside India</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Property Type You're Looking For <span class="req">*</span></label>
+      <select id="propertyType" required>
+        <option value="">Select a property type</option>
+        <option value="Villa">Villa</option>
+        <option value="Premium Apartment">Premium Apartment</option>
+        <option value="Villament">Villament</option>
+        <option value="Penthouse">Penthouse</option>
+        <option value="Plot in Gated Community">Plot in Gated Community</option>
+        <option value="Not Sure Yet">Not Sure Yet</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Comments (Optional)</label>
+      <textarea id="message" placeholder="Tell us your budget, preferred BHK, timeline, or which project you're interested in..."></textarea>
+    </div>
+    <button class="form-submit" onclick="submitForm()">Submit Enquiry</button>
+    <div class="success-msg" id="successMsg">
+      ✅ Thank you! We'll reach out to you within a few hours.
+    </div>
+    <p class="form-note">We never share your details. No spam, ever.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span>BMG HOUSING</span>
+      <span>Building Meaningful Generations · Bangalore</span>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer-copy">
+      © 2025 BMG Housing. RERA-Registered Channel Partner. RERA No: [Insert Your RERA Number]. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  function openMenu() {
+    document.getElementById('mobileMenu').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function setProject(name) {
+    setTimeout(() => {
+      const type = document.getElementById('propertyType');
+      const msg = document.getElementById('message');
+      if (type) type.value = name === 'Surya Valencia' ? 'Villa' : 'Villament';
+      if (msg && !msg.value.includes(name)) {
+        msg.value = (msg.value ? msg.value + ' ' : '') + 'Interested in: ' + name + '.';
+      }
+    }, 300);
+  }
+
+  function submitForm() {
+    const fullName = document.getElementById('fullName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const location = document.getElementById('location').value;
+    const propertyType = document.getElementById('propertyType').value;
+    const comments = document.getElementById('message').value.trim();
+    const phoneDigits = phone.replace(/\D/g, '');
+
+    if (!fullName) { alert('Please enter your full name.'); return; }
+    if (phoneDigits.length !== 10) { alert('Please enter a valid 10-digit phone number.'); return; }
+    if (!propertyType) { alert("Please select the type of property you're looking for."); return; }
+
+    const submitBtn = document.querySelector('.form-submit');
+    submitBtn.textContent = 'Submitting...';
+    submitBtn.disabled = true;
+
+    fetch('https://script.google.com/macros/s/AKfycbwl6ZzZ7AyASF7a6-zQ2VXONW7C8582B0jaetDfiTZswlBX7qvY2JPSTKKYWwQyJZKR/exec', {
+      method: 'POST',
+      body: JSON.stringify({ fullName, phone, location, propertyType, comments }),
+      headers: { 'Content-Type': 'text/plain' } // avoids a CORS preflight issue with Apps Script
+    })
+    .then(() => {
+      submitBtn.style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    })
+    .catch(() => {
+      alert('Something went wrong. Please try again or call us directly.');
+      submitBtn.textContent = 'Submit Enquiry';
+      submitBtn.disabled = false;
+    });
+  }
+
+  // Smooth active nav highlight
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current
+        ? 'var(--gold)' : '';
+    });
+
+    // Hide floating CTA once the contact form itself is in view
+    const contact = document.getElementById('contact');
+    const floatingCta = document.getElementById('floatingCta');
+    if (contact && floatingCta) {
+      const rect = contact.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.6) {
+        floatingCta.classList.add('hide');
+      } else {
+        floatingCta.classList.remove('hide');
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
