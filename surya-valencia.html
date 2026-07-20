@@ -71,8 +71,7 @@
   <p class="project-hero-sub">Spanish-themed luxury villas in Yelahanka, North Bangalore — by Surya Developers</p>
 
   <div class="project-hero-photo">
-    <!-- Replace with your own project photo: <img src="images/surya-valencia/hero.jpg" alt="Surya Valencia villas" /> -->
-    <div class="photo-placeholder-label">Add Hero Photo — images/surya-valencia/hero.jpg</div>
+    <img src="images/surya-valencia/surya-valencia-hero.jpg" alt="Surya Valencia villas" />
   </div>
 
   <div class="project-hero-actions">
@@ -133,17 +132,21 @@
   <div class="plan-grid">
     <div class="plan-card">
       <div class="plan-card-image">
-        <!-- Replace with: <img src="images/surya-valencia/site-plan.jpg" alt="Surya Valencia site plan" /> -->
-        <div class="plan-placeholder">Add Site Plan Image<br/>images/surya-valencia/site-plan.jpg</div>
+        <img src="images/surya-valencia/4bhk-cutplan-Floor-plan.png" alt="4 BHK floor plan" onclick="openLightbox(this.src, this.alt)"/>
       </div>
-      <div class="plan-card-label">Master Site Plan</div>
+      <div class="plan-card-label">4 BHK Villa — Floor Plan</div>
     </div>
     <div class="plan-card">
       <div class="plan-card-image">
-        <!-- Replace with: <img src="images/surya-valencia/floor-plan-4bhk.jpg" alt="4 BHK floor plan" /> -->
-        <div class="plan-placeholder">Add Floor Plan Image<br/>images/surya-valencia/floor-plan-4bhk.jpg</div>
+        <img src="images/surya-valencia/5bhk-CutPlan-Floor-plan.png" alt="5 BHK floor plan" onclick="openLightbox(this.src, this.alt)"/>
       </div>
-      <div class="plan-card-label">4 BHK Villa — Floor Plan</div>
+      <div class="plan-card-label">5 BHK Villa — Floor Plan</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-card-image">
+        <img src="images/surya-valencia/master-site-plan.jpg" alt="Surya Valencia site plan" onclick="openLightbox(this.src, this.alt)"/>
+      </div>
+      <div class="plan-card-label">Master Site Plan</div>
     </div>
   </div>
 </section>
@@ -184,19 +187,22 @@
 
   <div class="photo-gallery">
     <div class="gallery-item">
-      <div class="photo-placeholder-label">Add Photo<br/>images/surya-valencia/1.jpg</div>
+        <img src="images/surya-valencia/project-gallery1.jpg" alt="project gallery 1" onclick="openLightbox(this.src, this.alt)"/>
     </div>
     <div class="gallery-item">
-      <div class="photo-placeholder-label">Add Photo<br/>images/surya-valencia/2.jpg</div>
+        <img src="images/surya-valencia/project-gallery2.jpeg" alt="project gallery 2" onclick="openLightbox(this.src, this.alt)"/>
     </div>
     <div class="gallery-item">
-      <div class="photo-placeholder-label">Add Photo<br/>images/surya-valencia/3.jpg</div>
+        <img src="images/surya-valencia/project-gallery3.jpeg" alt="project gallery 3" onclick="openLightbox(this.src, this.alt)"/>
     </div>
     <div class="gallery-item">
-      <div class="photo-placeholder-label">Add Photo<br/>images/surya-valencia/4.jpg</div>
+        <img src="images/surya-valencia/project-gallery4.jpeg" alt="project gallery 4" onclick="openLightbox(this.src, this.alt)"/>
     </div>
     <div class="gallery-item">
-      <div class="photo-placeholder-label">Add Photo<br/>images/surya-valencia/5.jpg</div>
+        <img src="images/surya-valencia/project-gallery5.jpg" alt="project gallery 5" onclick="openLightbox(this.src, this.alt)"/>
+    </div>
+    <div class="gallery-item">
+        <img src="images/surya-valencia/project-gallery6.jpg" alt="project gallery 6" onclick="openLightbox(this.src, this.alt)"/>
     </div>
   </div>
 </section>
@@ -259,23 +265,23 @@
         <div class="contact-icon">📞</div>
         <div class="contact-item-text">
           <label>Call / WhatsApp</label>
-          <span>+91 00000 00000</span>
+          <span>+91 7975968562</span>
         </div>
       </div>
       <div class="contact-item">
         <div class="contact-icon">✉️</div>
         <div class="contact-item-text">
           <label>Email Us</label>
-          <span>hello@bmghousing.com</span>
+          <span>sales@bmghousing.com</span>
         </div>
       </div>
-      <div class="contact-item">
+      <!-- <div class="contact-item">
         <div class="contact-icon">📜</div>
         <div class="contact-item-text">
           <label>RERA Registration</label>
           <span>RERA No: [Insert Your RERA Number] — verifiable at rera.karnataka.gov.in</span>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -291,7 +297,7 @@
         <input type="tel" id="phone" placeholder="98765 43210" required maxlength="10" />
       </div>
       <div class="form-group">
-        <label>Location</label>
+        <label>Current Location</label>
         <select id="location">
           <option value="">Select (optional)</option>
           <option value="India">India</option>
@@ -340,6 +346,15 @@
     </div>
   </div>
 </footer>
+
+
+<!-- IMAGE LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+  <img src="" alt="" class="lightbox-img" id="lightboxImg" onclick="toggleZoom(event)" onclick="openLightbox(this.src, this.alt)"/>
+  <div class="lightbox-hint">Click image to zoom · Click outside to close</div>
+</div>
+
 
 <script>
   function openMenu() {
@@ -396,6 +411,28 @@
       }
     }
   });
+
+  function openLightbox(src, alt) {
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightboxImg');
+    img.src = src;
+    img.alt = alt;
+    img.classList.remove('zoomed');
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox(e) {
+    if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-close')) {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function toggleZoom(e) {
+    e.stopPropagation();
+    e.target.classList.toggle('zoomed');
+  }
 </script>
 
 </body>
